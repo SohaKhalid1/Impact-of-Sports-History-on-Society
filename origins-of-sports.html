@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Origins of sports</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://www.si.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTY4MTg5NDQzOTkzMTg0MTU3/42-john-havlicek-1965-fsjpg.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    header h1 {
+      font-size: 45px;
+      margin: 0;
+    }
+
+    .menu-icon {
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 99999;
+    }
+
+    .menu-icon img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-icon:hover img {
+      transform: rotate(-90deg);
+    }
+
+    nav {
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 250px; /* Adjust the width as needed */
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px;
+      border-radius: 1px;
+      z-index: 9999;
+      text-align: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav.open {
+      transform: translateX(0%);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      font-weight: bold;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 200px; /* Adjust the width as needed */
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .submenu a {
+      display: block;
+      padding: 5px 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .menu-icon:hover + nav .submenu,
+    nav:hover .submenu {
+      display: block;
+    }
+
+    .page {
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 5px;
+      color: #fff;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .page h2 {
+      font-size: 41px;
+      margin-bottom: 20px;
+    }
+
+    .page p {
+      font-size: 25px;
+    }
+  </style>
+  <script>
+    // JavaScript code
+    function toggleMenu() {
+      var nav = document.querySelector('nav');
+      nav.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Origin of Sports</h1>
+  </header>
+  <div class="menu-icon" onmouseover="toggleMenu()">
+    <img src="https://icon-library.com/images/menu-icon-png-3-lines/menu-icon-png-3-lines-5.jpg" alt="Menu Icon">
+  </div>
+  <nav onmouseleave="toggleMenu()">
+    <ul>
+	  <li>
+        <a href="index.html">Home</a>
+      </li>
+	  <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="olympic-history.html">Olympic History</a>
+      </li>
+      <li>
+        <a href="origins-of-sports.html">Origin of Different Sports</a>
+      </li>
+      <li>
+        <a href="origins-of-ice-hockey.html">Origins of Ice Hockey</a>
+      </li>
+      <li>
+        <a href="culture.html">Culture</a>
+      </li>
+      <li>
+        <a href="economy.html">Economic Impact</a>
+      </li>
+      <li>
+        <a href="hockey-canada.html">Hockey’s Impact in Canada</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="page">
+     <p>Skating dates back to the 14th century when the Dutch invented platform skates, which were used with poles for acceleration, steering, and balance. The modern form of skating came to be around the 16th century with new designs in skates. Baseball was invented as another bat and ball game, but the modern rules and pitch were developed in 1845. Softball was invented in 1887 as a form of indoor baseball before becoming its own sport. Basketball's first set of recorded formal rules were devised in 1892.</p>
+    </div>
+  </main>
+</body>
+</html>
+
